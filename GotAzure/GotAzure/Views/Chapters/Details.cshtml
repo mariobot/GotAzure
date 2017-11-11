@@ -1,0 +1,83 @@
+﻿@model GotAzure.Models.Chapter
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Chapter</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateChapter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateChapter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SeasonChapter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SeasonChapter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EpisodeChapter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EpisodeChapter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.YearSeason)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.YearSeason)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.URLImgChapter)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URLImgChapter)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.URLVideo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.URLVideo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

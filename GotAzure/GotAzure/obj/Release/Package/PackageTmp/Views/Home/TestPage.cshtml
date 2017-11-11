@@ -1,0 +1,102 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>TestPage</title>
+    <style type="text/css">
+       
+
+
+h1 {
+    font-family: 'Bevan', cursive;
+    color: #ffffFF;
+    padding:0;
+    margin:0;
+    margin-bottom:8px;
+    margin-top:8px;
+}
+
+h2 {
+    font-family: 'Dancing Script', cursive;
+    color: #ffffFF;
+    padding:0;
+    margin:0;
+    margin-top:16px;
+}
+
+body {
+    background-color: transparent;
+    background: url("http://i.imgur.com/Tb5NGUl.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.embed-responsive-item {
+    max-width: 1280px;
+}
+
+.highlight {
+    font-size: 18px;
+    font-family: 'Pontano Sans', cursive;
+    color: #ffffFF;
+    background-color: #000000;
+}
+
+.nopadding {
+    padding:0;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="row" style="height: 224px;">
+                <div class="col-md-12 col-xs-12 nopadding">
+                    <h2 class="text-center">Home</h2>
+                    <h1 class="text-center">FMV</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1 col-xs-12 col-xs-offset-0 nopadding">
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe id="ytiframe" class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/5YL_dOgEGVw?vq=hd720&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p></p>
+                <span class="highlight">  Where It Goes  </span>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+  var tag = document.createElement('script');
+    tag.id = 'iframe-api';
+    tag.src = 'https://www.youtube.com/iframe_api';
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+    	player = new YT.Player('ytiframe', {
+      	events: {
+        	'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange,
+          'onError': onPlayerError
+        }
+      });
+    }
+    </script>
+</body>
+</html>
