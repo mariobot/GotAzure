@@ -102,5 +102,6 @@ C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.Migrations.Chapters.
 C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.csproj.GenerateResource.Cache
 C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.dll
 C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.pdb
-C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.csprojResolveAssemblyReference.cache
 C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.csproj.CoreCompileInputs.cache
+C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.csprojAssemblyReference.cache
+C:\Desarrollo\GotAzure\GotAzure\GotAzure\obj\Debug\GotAzure.csproj.CopyComplete
